@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="685.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListTasksController">
+	<children>
+		<AnchorPane prefHeight="94.0" prefWidth="685.0" style="-fx-background-color: #560027;">
+			<children>
+				<Label alignment="CENTER" layoutX="301.0" layoutY="22.0" prefHeight="43.0" prefWidth="104.0" text="ToDo" textFill="WHITE">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+				<Label fx:id="welcomeLabel" alignment="CENTER" layoutX="551.0" layoutY="1.0" prefHeight="26.0" prefWidth="133.0" text="welcomeLabel" textFill="WHITE" />
+				<ImageView fx:id="addImage" fitHeight="39.0" fitWidth="39.0" layoutX="14.0" layoutY="28.0" onMouseEntered="#handleAddImageMouseEntered" onMousePressed="#handleAddImageMousePressed" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../resources/images/add_icon.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="71.0" layoutY="34.0" prefHeight="26.0" prefWidth="60.0" text="Add task" textFill="WHITE" />
+            <Label fx:id="useridLabel" layoutX="329.0" layoutY="6.0" text="userid" />
+            <Label fx:id="taskidLabel" layoutX="273.0" layoutY="6.0" text="taskid" />
+			</children>
+		</AnchorPane>
+		<VBox layoutX="319.0" layoutY="94.0" prefHeight="378.0" prefWidth="366.0" spacing="2.0">
+			<children>
+				<Label id="labelId" fx:id="label1" alignment="CENTER" contentDisplay="CENTER" onMouseEntered="#handleLabel1MouseEntered" onMouseExited="#handleLabel1MouseExit" onMousePressed="#handleLabel1MousePressed" prefHeight="74.0" prefWidth="370.0" style="-fx-background-color: #880e4f;" textFill="WHITE">
+					<font>
+						<Font name="System Italic" size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="label2" alignment="CENTER" contentDisplay="CENTER" onMouseEntered="#handleLabel2MouseEntered" onMouseExited="#handleLabel2MouseExited" onMousePressed="#handleLabel2MousePressed" prefHeight="74.0" prefWidth="370.0" style="-fx-background-color: #880e4f;" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" onMouseEntered="#handleLabel3MouseEntered" onMouseExited="#handleLabel3MouseExited" onMousePressed="#handleLabel3MousePressed" prefHeight="74.0" prefWidth="374.0" style="-fx-background-color: #880e4f;" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="label4" alignment="CENTER" contentDisplay="CENTER" onMouseEntered="#handleLabel4MouseEntered" onMouseExited="#handleLabel4MouseExited" onMousePressed="#handleLabel4MousePressed" prefHeight="74.0" prefWidth="368.0" style="-fx-background-color: #880e4f;" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+				<Label fx:id="label5" onMouseEntered="#handleLabel5MouseEntered" onMouseExited="#handleLabel5MouseExited" onMousePressed="#handleLabel5MousePressed" prefHeight="74.0" prefWidth="366.0" style="-fx-background-color: #880e4f;" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Label>
+			</children>
+		</VBox>
+		<ImageView fx:id="deleteImage" fitHeight="39.0" fitWidth="47.0" layoutX="14.0" layoutY="110.0" onMousePressed="#handleDeleteIconMousePressed" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../resources/images/icon_Trash.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="69.0" layoutY="117.0" prefHeight="26.0" prefWidth="67.0" text="detete task" />
+	</children>
+</AnchorPane>
